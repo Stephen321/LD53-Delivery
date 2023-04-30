@@ -1,0 +1,37 @@
+[gd_scene load_steps=4 format=3 uid="uid://bs8kwxuqdsdc8"]
+
+[ext_resource type="PackedScene" uid="uid://dwl0tpd42dhkp" path="res://scene/game/player.tscn" id="1_tqxie"]
+[ext_resource type="PackedScene" uid="uid://di5e1aygx28k3" path="res://scene/game/spot.tscn" id="2_2em0c"]
+[ext_resource type="Script" path="res://scripts/spots.gd" id="2_vampl"]
+
+[node name="Game" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_tqxie")]
+position = Vector2(313, 146)
+
+[node name="Spots" type="Node2D" parent="."]
+script = ExtResource("2_vampl")
+
+[node name="GrowableSpot" parent="Spots" groups=["SpotGroup"] instance=ExtResource("2_2em0c")]
+position = Vector2(210, 360)
+
+[node name="GrowableSpot2" parent="Spots" groups=["GrowableSpotGroup"] instance=ExtResource("2_2em0c")]
+position = Vector2(136, 330)
+
+[node name="GrowableSpot3" parent="Spots" groups=["GrowableSpotGroup"] instance=ExtResource("2_2em0c")]
+position = Vector2(287, 364)
+
+[node name="GrowableSpot4" parent="Spots" groups=["GrowableSpotGroup"] instance=ExtResource("2_2em0c")]
+position = Vector2(375, 358)
+
+[node name="GrowableSpot5" parent="Spots" groups=["GrowableSpotGroup"] instance=ExtResource("2_2em0c")]
+position = Vector2(489, 345)
+
+[node name="GrowableSpot6" parent="Spots" groups=["GrowableSpotGroup"] instance=ExtResource("2_2em0c")]
+position = Vector2(592, 337)
+
+[node name="GrowableSpot7" parent="Spots" groups=["GrowableSpotGroup"] instance=ExtResource("2_2em0c")]
+position = Vector2(698, 323)
+
+[node name="GrowableSpot8" parent="Spots" groups=["GrowableSpotGroup"] instance=ExtResource("2_2em0c")]
+position = Vector2(59, 343)
